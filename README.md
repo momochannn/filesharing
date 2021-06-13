@@ -53,7 +53,7 @@ I Guess This Will Be Usefull For Many People.....😇.
 
 #### Deploy in your VPS
 ````bash
-git clone https://github.com/pindoajah90/filesharing
+git clone https://github.com/momochannn/filesharing
 cd File-Sharing-Bot
 pip3 install -r requirements.txt
 # <Create config.py appropriately>
