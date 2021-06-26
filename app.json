@@ -28,15 +28,15 @@
     },
     "CHANNEL_ID":{
       "description": "make a channel (database channel), then make the bot as admin in channel, and it's id",
-      "value": "-100"
+      "value": "-100 (Channel Untuk DataBase)"
     },
     "FORCE_SUB_CHANNEL":{
       "description": "id of the channel or group, if you want enable force sub feature else put 0",
-      "value": "0"
+      "value": "-100 (Channel Untuk Confire BOT ASKES)"
     },
     "START_MESSAGE": {
       "description": "Optional: start message of bot, use HTML parsemode format",
-      "value": "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link."
+      "value": "Hello Kak {first}\n\nUntuk Akses Bot, Silahkan kakak Follow dulu Channel kami agar botnya bekerja."
     },
     "ADMINS": {
       "description": "A space separated list of user_ids of Admins, they can only create links",
