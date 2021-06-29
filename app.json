@@ -27,11 +27,11 @@
       "value": ""
     },
     "CHANNEL_ID":{
-      "description": "make a channel (database channel), then make the bot as admin in channel, and it's id",
+      "description": "Channel Database untuk file yang ingin di jadikan Link, untuk mendapatkan ID Channel Kalian Forward Text ke di t.me/TGIdsBot",
       "value": "-100 (Channel Untuk DataBase)"
     },
     "FORCE_SUB_CHANNEL":{
-      "description": "id of the channel or group, if you want enable force sub feature else put 0",
+      "description": "Channel untuk menconfire bot agar botnya bisa mengirim Link dari DB Channel, untuk mendapatkan ID Channel Kalian Forward Text ke di t.me/TGIdsBot",
       "value": "-100 (Channel Untuk Confire BOT ASKES)"
     },
     "START_MESSAGE": {
@@ -39,8 +39,8 @@
       "value": "Hello Kak {first}\n\nUntuk Akses Bot, Silahkan kakak Follow dulu Channel kami agar botnya bekerja."
     },
     "ADMINS": {
-      "description": "A space separated list of user_ids of Admins, they can only create links",
-      "value": "",
+      "description": "ADMIN YANG DI IZINKAN UNTUK MEMBUAT LINK, untuk mendapatkan ID ADM Kalian Forward Pesan Pribadi ke di t.me/TGIdsBot",
+      "value": "Contoh (1378605372 0123456789)",
       "required": false
     }
   }
