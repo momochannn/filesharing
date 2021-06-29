@@ -40,7 +40,7 @@
     },
     "ADMINS": {
       "description": "ADMIN YANG DI IZINKAN UNTUK MEMBUAT LINK, untuk mendapatkan ID ADM Kalian Forward Pesan Pribadi ke di t.me/TGIdsBot",
-      "value": "Contoh 1378605372(Spasi)0123456789",
+      "value": "Contoh ADM1(Spasi)ADM2 = 1378605372 0123456789",
       "required": false
     }
   }
