@@ -108,3 +108,10 @@ async def not_joined(client: Client, message: Message):
         quote = True,
         disable_web_page_preview = True
     )
+    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("GET MEDIA", href='https://t.me/{client.username}?start={argument}')]])
+    await message.reply(
+        text = text,
+        reply_markup = reply_markup,
+        quote = True,
+        disable_web_page_preview = True
+    )
