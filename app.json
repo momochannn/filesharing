@@ -41,7 +41,7 @@
     },
     "CUSTOM_CAPTION": {
       "description": "Isi dengan caption bebas apa aja",
-      "value": ""
+      "value": "PLEASE JOIN (Channel / Group Kamu) Untuk menggunakan BOT"
     },
     "START_MESSAGE": {
       "description": "Optional: pesan sambutan isi dengan format HTML seperti contoh",
