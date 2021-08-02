@@ -88,11 +88,11 @@ async def start_command(client: Client, message: Message):
 
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
-    text = "<b>Anda harus join channel/Group untuk menggunakan saya\n\nTolong bergabunglah ke Channel</b>"
+    text = "<b>𝗔𝗻𝗱𝗮 𝗵𝗮𝗿𝘂𝘀 𝗷𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹/𝗚𝗿𝗼𝘂𝗽 𝘂𝗻𝘁𝘂𝗸 𝗺𝗲𝗻𝗴𝗴𝘂𝗻𝗮𝗸𝗮𝗻 𝗕𝗢𝗧\n\n𝐓𝐨𝐥𝐨𝐧𝐠 𝐛𝐞𝐫𝐠𝐚𝐛𝐮𝐧𝐠𝐥𝐚𝐡 𝐤𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥/𝐆𝐫𝐨𝐮𝐩</b>"
     message_text = message.text
     try:
         command, argument = message_text.split()
-        text = text + f" <b>Kalau belum join gak bisa buka file nya kalau sudah join silahkan klik GET FILE</b>"
+        text = text + f" <b>𝙆𝙖𝙡𝙖𝙪 𝙗𝙚𝙡𝙪𝙢 𝙟𝙤𝙞𝙣, 𝘽𝙊𝙏 𝙩𝙞𝙙𝙖𝙠 𝙢𝙚𝙣𝙜𝙞𝙧𝙞𝙢 𝙛𝙞𝙡𝙚/𝙩𝙞𝙙𝙖𝙠 𝘽𝙚𝙠𝙚𝙧𝙟𝙖. 𝙠𝙖𝙡𝙖𝙪 𝙨𝙪𝙙𝙖𝙝 𝙟𝙤𝙞𝙣 𝙨𝙞𝙡𝙖𝙝𝙠𝙖𝙣 𝙠𝙡𝙞𝙠 𝙂𝙀𝙏 𝙁𝙄𝙇𝙀</b>"
     except ValueError:
         pass
     reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🔞 𝙹𝙾𝙸𝙽 𝙷𝙴𝚁𝙴 🔞", url = client.invitelink)],[InlineKeyboardButton("🔄 𝙶𝙴𝚃 𝙵𝙸𝙻𝙴", url = f"https://t.me/{client.username}?start={argument}")]])
