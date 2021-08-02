@@ -37,7 +37,7 @@
     },
     "FORCE_SUB_CHANNEL": {
       "description": "Isi id channel wajib sub, kalau mau nonaktifkan isi aja 0",
-      "value": ""
+      "value": "0"
     },
     "CUSTOM_CAPTION": {
       "description": "Isi dengan caption bebas apa aja",
