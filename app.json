@@ -1,46 +1,59 @@
 
 {
-  "name": "TG File Sharing Bot",
-  "description": "file sharing bot store posts and it can access by special links",
+  "name": "File Sharing Bot",
+  "description": "berbagi file pos penyimpanan bot dan dapat diakses dengan tautan khusus",
   "keywords": [
     "telegram",
     "file",
     "sharing"
   ],
-  "repository": "https://github.com/momochannn/filesharing",
-  "logo": "",
+  "repository": "https://github.com/kenkannih/File-Sharing-Bot",
+  "logo": "https://telegra.ph/file/a112fce4e23d859badcd4.jpg",
   "env": {
     "TG_BOT_TOKEN": {
-      "description": "Your Bot token, Get it from @Botfather",
+      "description": "Dapatkan di  @Botfather",
       "value": ""
     },
     "OWNER_ID": {
-      "description": "An integer of consisting of your owner ID",
-      "value": "1378605372"
-    },
-    "APP_ID":{
-      "description": "your app id, take it from my.telegram.org",
+      "description": "Isi dengan id kamu, format angka",
       "value": ""
     },
-    "API_HASH":{
-      "description": "your api hash, take it from my.telegram.org",
+    "APP_ID": {
+      "description": "Dapatkan di my.telegram.org",
       "value": ""
     },
-    "CHANNEL_ID":{
-      "description": "Channel Database untuk file yang ingin di jadikan Link, untuk mendapatkan ID Channel Kalian Forward Text ke di t.me/TGIdsBot",
-      "value": "-100 (Channel Untuk DataBase)"
+    "API_HASH": {
+      "description": "Dapatkan di my.telegram.org",
+      "value": ""
     },
-    "FORCE_SUB_CHANNEL":{
-      "description": "Channel untuk menconfire bot agar botnya bisa mengirim Link dari DB Channel, untuk mendapatkan ID Channel Kalian Forward Text ke di t.me/TGIdsBot",
-      "value": "-100 (Channel Untuk Confire BOT ASKES)"
+    "CHANNEL": {
+      "description": "Masukan Nama atau Username channel atau group tanpa tanda @",
+      "required": true,
+      "value": "musikkuchannel"  
+    },
+    "DISABLE_CHANNEL_BUTTON": {
+      "description": "Isi dengan True atau False",
+      "value": "False"
+    },
+    "CHANNEL_ID": {
+      "description": "Isi dengan channel id yang mau di jadikan tempat penyimpanan channel juga bisa ptivat",
+      "value": ""
+    },
+    "FORCE_SUB_CHANNEL": {
+      "description": "Isi id channel wajib sub, kalau mau nonaktifkan isi aja 0",
+      "value": ""
+    },
+    "CUSTOM_CAPTION": {
+      "description": "Isi dengan caption bebas apa aja",
+      "value": ""
     },
     "START_MESSAGE": {
-      "description": "Optional: start message of bot, use HTML parsemode format",
-      "value": "Hello Kak {first}\n\nUntuk Akses Bot, Silahkan kakak Follow dulu Channel kami agar botnya bekerja."
+      "description": "Optional: pesan sambutan isi dengan format HTML seperti contoh",
+      "value": "Halo {firstname}\n\nSaya dapat menyimpan file pribadi di Saluran Tertentu dan pengguna lain dapat mengaksesnya dari tautan khusus."
     },
     "ADMINS": {
-      "description": "ADMIN YANG DI IZINKAN UNTUK MEMBUAT LINK, untuk mendapatkan ID ADM Kalian Forward Pesan Pribadi ke di t.me/TGIdsBot",
-      "value": "Contoh ADM1(Spasi)ADM2 = 1378605372 0123456789",
+      "description": "Daftar user_id dari Admin, mereka hanya dapat membuat link",
+      "value": "",
       "required": false
     }
   }
