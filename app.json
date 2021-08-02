@@ -29,7 +29,7 @@
     "CHANNEL": {
       "description": "Masukan Nama atau Username channel atau group tanpa tanda @",
       "required": true,
-      "value": "musikkuchannel"  
+      "value": "Freeasupan18_Ch"  
     },
     "CHANNEL_ID": {
       "description": "Isi dengan channel id yang mau di jadikan tempat penyimpanan channel juga bisa ptivat",
