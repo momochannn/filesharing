@@ -95,7 +95,7 @@ async def not_joined(client: Client, message: Message):
         text = text + f" <b>Kalau belum join gak bisa buka file nya kalau sudah join silahkan klik GET FILE</b>"
     except ValueError:
         pass
-    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("💌 JOIN HERE 💌", url = client.invitelink)],[InlineKeyboardButton("🔄 GET FILE", url = f"https://t.me/{client.username}?start={argument}")]])
+    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🔞 𝙹𝙾𝙸𝙽 𝙷𝙴𝚁𝙴 🔞", url = client.invitelink)],[InlineKeyboardButton("🔄 𝙶𝙴𝚃 𝙵𝙸𝙻𝙴", url = f"https://t.me/{client.username}?start={argument}")]])
     await message.reply(
         text = text,
         reply_markup = reply_markup,
