@@ -92,10 +92,10 @@ async def not_joined(client: Client, message: Message):
     message_text = message.text
     try:
         command, argument = message_text.split()
-        text = text + f" <b>Kalau belum join gak bisa buka file nya kalau sudah join silahkan klik refresh</b>"
+        text = text + f" <b>Kalau belum join gak bisa buka file nya kalau sudah join silahkan klik GET MEDIA</b>"
     except ValueError:
         pass
-    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("💌 JOIN CHANNEL 💌", url = client.invitelink)],[InlineKeyboardButton("🔄 REFRESH", url = f"https://t.me/{client.username}?start={argument}")]])
+    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🔞 JOIN HERE 🔞", url = client.invitelink)],[InlineKeyboardButton("🎥 GET MEDIA ", url = f"https://t.me/{client.username}?start={argument}")]])
     await message.reply(
         text = text,
         reply_markup = reply_markup,
