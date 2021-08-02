@@ -8,7 +8,7 @@
     "sharing"
   ],
   "repository": "https://github.com/momochannn/filesharing",
-  "logo": "https://telegra.ph/file/a112fce4e23d859badcd4.jpg",
+  "logo": "",
   "env": {
     "TG_BOT_TOKEN": {
       "description": "Dapatkan di  @Botfather",
