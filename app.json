@@ -31,10 +31,6 @@
       "required": true,
       "value": "musikkuchannel"  
     },
-    "DISABLE_CHANNEL_BUTTON": {
-      "description": "Isi dengan True atau False",
-      "value": "False"
-    },
     "CHANNEL_ID": {
       "description": "Isi dengan channel id yang mau di jadikan tempat penyimpanan channel juga bisa ptivat",
       "value": ""
