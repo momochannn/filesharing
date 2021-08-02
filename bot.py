@@ -29,7 +29,7 @@ class Bot(Client):
             except:
                 self.LOGGER(__name__).warning("Bot tidak bisa mengekspor link undangan dari Force Sub Channel!")
                 self.LOGGER(__name__).warning("Harap periksa kembali nilai FORCE_SUB_CHANNEL dan Pastikan Bot adalah Admin di saluran dengan Undang Pengguna melalui Izin Tautan")
-                self.LOGGER(__name__).info("\nBot Dihentikan. Harap hubungi https://t.me/kenkanasw untuk mendapatkan dukungan")
+                self.LOGGER(__name__).info("\nBot Dihentikan. Harap hubungi https://t.me/ZkucingMars untuk mendapatkan dukungan")
                 sys.exit()
         try:
             db_channel = await self.get_chat(CHANNEL_ID)
@@ -39,11 +39,11 @@ class Bot(Client):
         except Exception as e:
             self.LOGGER(__name__).warning(e)
             self.LOGGER(__name__).warning("Pastikan bot adalah Admin di Channel DB, dan periksa kembali Nilai CHANNEL_ID Value")
-            self.LOGGER(__name__).info("\n💢MAAF BOT ERROR💢 Owner https://t.me/kenkanasw")
+            self.LOGGER(__name__).info("\n💢MAAF BOT ERROR💢 Owner https://t.me/Zkucingmars")
             sys.exit()
 
         self.set_parse_mode("html")
-        self.LOGGER(__name__).info(f"💠BOT SUDAH SIAP DIGUNAKAN💠\n\nCreated by 𝘾𝙤𝙙𝙚 𝕏 𝘽𝙤𝙩𝙯\nhttps://t.me/kenkanasw")
+        self.LOGGER(__name__).info(f"💠BOT SUDAH SIAP DIGUNAKAN💠\n\nCreated by 𝕏 𝘽𝙤𝙩𝙯\nhttps://t.me/ZkucingMars")
         self.username = usr_bot_me.username
 
     async def stop(self, *args):
