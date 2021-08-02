@@ -1,4 +1,3 @@
-#(©)Codexbotz
 
 import asyncio
 from pyrogram import Client, filters, __version__
@@ -40,14 +39,13 @@ async def start_command(client: Client, message: Message):
                 ids = [int(int(argument[1]) / abs(client.db_channel.id))]
             except:
                 return
-        temp_msg = await message.reply("Harap tunggu...")
+        temp_msg = await message.reply("Harap tunggu ...")
         try:
             messages = await get_messages(client, ids)
         except:
-            await message.reply_text("Terjadi kesalahan..!")
+            await message.reply_text("Ada yang tidak beres ..!")
             return
         await temp_msg.delete()
-
         for msg in messages:
 
             if bool(CUSTOM_CAPTION) & bool(msg.document):
@@ -69,23 +67,19 @@ async def start_command(client: Client, message: Message):
             except:
                 pass
         return
-    else:
+    else:         
         reply_markup = InlineKeyboardMarkup(
             [
-                [
-                    InlineKeyboardButton("😊 About Me", callback_data = "about"),
-                    InlineKeyboardButton("🔒 Close", callback_data = "close")
-                ]
+               [
+                InlineKeyboardButton("💌 JOIN HERE 💌", url = client.invitelink), 
+              ],[
+                InlineKeyboardButton("😊 About Me", callback_data = "about"),
+                InlineKeyboardButton("⛔ TUTUP ⛔", callback_data = "close")
+               ]
             ]
         )
         await message.reply_text(
-            text = START_MSG.format(
-                first = message.from_user.first_name,
-                last = message.from_user.last_name,
-                username = None if not message.from_user.username else '@' + message.from_user.username,
-                mention = message.from_user.mention,
-                id = message.from_user.id
-            ),
+            text = START_MSG.format(firstname = message.chat.first_name),
             reply_markup = reply_markup,
             disable_web_page_preview = True,
             quote = True
@@ -101,7 +95,7 @@ async def not_joined(client: Client, message: Message):
         text = text + f" <b>Kalau belum join gak bisa buka file nya kalau sudah join silahkan klik refresh</b>"
     except ValueError:
         pass
-    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("💌 JOIN CHANNEL 💌", url = client.invitelink)],[InlineKeyboardButton("🔄 REFRESH", url = f"https://t.me/{client.username}?start={argument}")]])
+    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("💌 JOIN HERE 💌", url = client.invitelink)],[InlineKeyboardButton("🔄 GET FILE", url = f"https://t.me/{client.username}?start={argument}")]])
     await message.reply(
         text = text,
         reply_markup = reply_markup,
