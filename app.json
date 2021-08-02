@@ -8,14 +8,13 @@
     "sharing"
   ],
   "repository": "https://github.com/momochannn/filesharing",
-  "logo": "",
   "env": {
     "TG_BOT_TOKEN": {
       "description": "Dapatkan di  @Botfather",
       "value": ""
     },
     "OWNER_ID": {
-      "description": "Isi dengan id kamu, format angka",
+      "description": "Isi dengan id kamu, format angka Contoh (",
       "value": ""
     },
     "APP_ID": {
@@ -29,11 +28,15 @@
     "CHANNEL": {
       "description": "Masukan Nama atau Username channel atau group tanpa tanda @",
       "required": true,
-      "value": "Freeasupan18_Ch"  
+      "value": "FreeASUPAN18_Ch"  
+    },
+    "DISABLE_CHANNEL_BUTTON": {
+      "description": "Isi dengan True atau False. True untuk Nonaktifkan Button/False Untuk Menaktifkan Button",
+      "value": "False"
     },
     "CHANNEL_ID": {
       "description": "Isi dengan channel id yang mau di jadikan tempat penyimpanan channel juga bisa ptivat",
-      "value": ""
+      "value": "-100"
     },
     "FORCE_SUB_CHANNEL": {
       "description": "Isi id channel wajib sub, kalau mau nonaktifkan isi aja 0",
@@ -41,15 +44,15 @@
     },
     "CUSTOM_CAPTION": {
       "description": "Isi dengan caption bebas apa aja",
-      "value": "PLEASE JOIN (Channel / Group Kamu) Untuk menggunakan BOT"
+      "value": "JOIN US TELEGRAM (Channel Kamu)"
     },
     "START_MESSAGE": {
       "description": "Optional: pesan sambutan isi dengan format HTML seperti contoh",
-      "value": "Halo {firstname}\n\nSaya dapat menyimpan file pribadi di Saluran Tertentu dan pengguna lain dapat mengaksesnya dari tautan khusus."
+      "value": "Halo {mention}\n\nSaya dapat menyimpan file pribadi di Saluran Tertentu dan pengguna lain dapat mengaksesnya dari Link khusus."
     },
     "ADMINS": {
       "description": "Daftar user_id dari Admin, mereka hanya dapat membuat link",
-      "value": "",
+      "value": "Contoh (1234567890 0987654321) ID ADMIN 1[Spasi]ID ADMIN 2",
       "required": false
     }
   }
