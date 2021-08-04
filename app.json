@@ -14,7 +14,7 @@
       "value": ""
     },
     "OWNER_ID": {
-      "description": "Isi dengan id kamu, format angka Contoh (",
+      "description": "Isi dengan id kamu, format angka Contoh (1378605372) Dapatkan IDnya di @TGIdsBot",
       "value": ""
     },
     "APP_ID": {
@@ -35,11 +35,11 @@
       "value": "False"
     },
     "CHANNEL_ID": {
-      "description": "Isi dengan channel id yang mau di jadikan tempat penyimpanan channel juga bisa ptivat",
+      "description": "Isi dengan channel id yang mau di jadikan tempat penyimpanan channel juga bisa ptivat. Forward Chat Channel ke BOT @TGIdsBot ",
       "value": "-100"
     },
     "FORCE_SUB_CHANNEL": {
-      "description": "Isi id channel wajib sub, kalau mau nonaktifkan isi aja 0",
+      "description": "Isi id channel wajib sub, Forward Chat Channel ke BOT @TGIdsBot kalau mau nonaktifkan isi aja 0",
       "value": "0"
     },
     "CUSTOM_CAPTION": {
